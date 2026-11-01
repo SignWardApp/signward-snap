@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "description": "A plain-English check on every transaction and signature, with a community drainer feed.",
+  "proposedName": "Signward",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SignWardApp/signward-snap",
+    "directory": "snap"
+  },
+  "source": {
+    "shasum": "mQDT5hNE+kJNxU0zJeFuoLci5klH03Gr6FbLCmAIfzg=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "@signwardapp/snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:transaction-insight": {
+      "allowTransactionOrigin": true
+    },
+    "endowment:signature-insight": {
+      "allowSignatureOrigin": true
+    },
+    "endowment:network-access": {},
+    "snap_manageState": {}
+  },
+  "platformVersion": "12.1.0",
+  "manifestVersion": "0.1"
+}

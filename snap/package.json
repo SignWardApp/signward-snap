@@ -1,0 +1,44 @@
+{
+  "name": "@signwardapp/snap",
+  "version": "0.2.0",
+  "description": "Signward for MetaMask: a plain-English check on every transaction and signature, with a community drainer feed.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/bundle.js",
+  "files": [
+    "dist/",
+    "images/",
+    "snap.manifest.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "gen": "node scripts/gen-messages.mjs",
+    "build": "npm run gen && mm-snap build",
+    "start": "npm run gen && mm-snap watch",
+    "test": "npm run build && node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "@metamask/snaps-cli": "^8.4.1",
+    "@metamask/snaps-jest": "^10.2.2",
+    "@metamask/snaps-sdk": "^12.1.0",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2",
+    "typescript": "^5.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SignWardApp/signward-snap",
+    "directory": "snap"
+  },
+  "homepage": "https://signward.app",
+  "keywords": [
+    "metamask",
+    "snap",
+    "security",
+    "wallet-drainer",
+    "phishing"
+  ]
+}

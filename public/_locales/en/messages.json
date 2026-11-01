@@ -1,0 +1,902 @@
+{
+  "ext_name": {
+    "message": "Signward - Drainer & Phishing Guard"
+  },
+  "ext_description": {
+    "message": "A plain-language check before you sign: Signward explains risky wallet approvals and signatures before you confirm."
+  },
+  "sw_gate_requested_by": {
+    "message": "Requested by $1"
+  },
+  "sw_gate_reject": {
+    "message": "Reject"
+  },
+  "sw_gate_approve": {
+    "message": "Approve anyway"
+  },
+  "sw_gate_hygiene": {
+    "message": "This permission stays open until you revoke it. Remember to revoke it when you are done."
+  },
+  "sw_sim_revert": {
+    "message": "Simulation: this transaction would fail (revert)"
+  },
+  "sw_sim_revert_reason": {
+    "message": "Simulation: this transaction would fail (revert). Reason: $1"
+  },
+  "sw_sim_ok": {
+    "message": "Simulation: this transaction would succeed (no revert)"
+  },
+  "sw_sim_unknown": {
+    "message": "Simulation: could not run"
+  },
+  "sw_sim_panic": {
+    "message": "panic (assertion or arithmetic error)"
+  },
+  "sw_find_all_title": {
+    "message": "Access to all of your tokens in a collection"
+  },
+  "sw_find_all_l1": {
+    "message": "This lets $1 move every token you hold in the collection at $2, now and in the future."
+  },
+  "sw_find_all_l2": {
+    "message": "Real marketplaces do ask for this, but a wrong address can empty the whole collection."
+  },
+  "sw_find_label_operator": {
+    "message": "Operator"
+  },
+  "sw_find_label_collection": {
+    "message": "Collection contract"
+  },
+  "sw_find_unknown_contract": {
+    "message": "an unknown contract"
+  },
+  "sw_find_unl_title": {
+    "message": "Unlimited spending permission"
+  },
+  "sw_find_lim_title": {
+    "message": "Token spending permission"
+  },
+  "sw_find_unl_l1": {
+    "message": "This lets $1 spend as much as it wants of the token at $2, up to your whole balance."
+  },
+  "sw_find_lim_l1": {
+    "message": "This lets $1 spend up to $2 base units of the token at $3."
+  },
+  "sw_find_unl_l2": {
+    "message": "The limit is the largest number possible, so it never runs out."
+  },
+  "sw_find_lim_l2": {
+    "message": "The spender can use this amount without asking you again."
+  },
+  "sw_find_label_spender": {
+    "message": "Spender"
+  },
+  "sw_find_label_token": {
+    "message": "Token contract"
+  },
+  "sw_find_label_amount": {
+    "message": "Amount"
+  },
+  "sw_imp_unl": {
+    "message": "Unlimited $1 approval"
+  },
+  "sw_imp_lim": {
+    "message": "Approve $1 $2"
+  },
+  "sw_imp_all": {
+    "message": "Full access to your $1 collection"
+  },
+  "sw_imp_label_name": {
+    "message": "Name"
+  },
+  "sw_imp_label_symbol": {
+    "message": "Symbol"
+  },
+  "sw_find_unlimited": {
+    "message": "Unlimited"
+  },
+  "sw_find_permit2_title": {
+    "message": "Off-chain spending permission (Permit2)"
+  },
+  "sw_find_permit_title": {
+    "message": "Off-chain spending permission (Permit)"
+  },
+  "sw_find_permit_l1": {
+    "message": "Signing this gives $1 permission to spend your tokens. It costs no gas and nothing shows on-chain until it is used."
+  },
+  "sw_find_permit_l1_unl": {
+    "message": "Signing this gives $1 permission to spend your tokens, with no practical limit. It costs no gas and nothing shows on-chain until it is used."
+  },
+  "sw_find_permit_l2": {
+    "message": "A signed permit can be used later by whoever holds it, so only sign it for a site you trust."
+  },
+  "sw_find_label_contract": {
+    "message": "Contract"
+  },
+  "sw_find_label_type": {
+    "message": "Type"
+  },
+  "sw_find_unknown": {
+    "message": "unknown"
+  },
+  "sw_find_raw_text": {
+    "message": "This signs a text message. Read it before you confirm."
+  },
+  "sw_find_raw_blind": {
+    "message": "This signs data you cannot read. Only sign it if you started this action yourself."
+  },
+  "sw_find_ethsign_warn": {
+    "message": "eth_sign can sign data that works like a transaction. Most sites never need it."
+  },
+  "sw_find_ethsign_title": {
+    "message": "Raw data signature"
+  },
+  "sw_find_msg_title": {
+    "message": "Message signature"
+  },
+  "sw_find_label_method": {
+    "message": "Method"
+  },
+  "sw_find_label_message": {
+    "message": "Message"
+  },
+  "sw_role_spender": {
+    "message": "Spender"
+  },
+  "sw_role_recipient": {
+    "message": "Recipient"
+  },
+  "sw_flag_sanctioned": {
+    "message": "$1 is on a sanctions list (OFAC)"
+  },
+  "sw_flag_phishing": {
+    "message": "$1 is flagged for phishing (community darklist)"
+  },
+  "sw_flag_drainer": {
+    "message": "$1 is a known drainer. Signward has seen it emptying wallets."
+  },
+  "sw_flag_drainer_ss": {
+    "message": "$1 is listed as a drainer by ScamSniffer."
+  },
+  "sw_warn_src_mm": {
+    "message": "Listed by MetaMask's phishing list"
+  },
+  "sw_warn_src_ss": {
+    "message": "Listed by ScamSniffer"
+  },
+  "sw_flag_phishing_activities": {
+    "message": "$1 is linked to phishing (GoPlus)"
+  },
+  "sw_flag_stealing_attack": {
+    "message": "$1 is linked to theft (GoPlus)"
+  },
+  "sw_flag_honeypot_related_address": {
+    "message": "$1 is linked to honeypots (GoPlus)"
+  },
+  "sw_flag_blacklist_doubt": {
+    "message": "$1 is on a security blacklist (GoPlus)"
+  },
+  "sw_flag_cybercrime": {
+    "message": "$1 is linked to cybercrime (GoPlus)"
+  },
+  "sw_flag_money_laundering": {
+    "message": "$1 is linked to money laundering (GoPlus)"
+  },
+  "sw_flag_financial_crime": {
+    "message": "$1 is linked to financial crime (GoPlus)"
+  },
+  "sw_flag_darkweb_transactions": {
+    "message": "$1 has darkweb transactions (GoPlus)"
+  },
+  "sw_flag_mixer": {
+    "message": "$1 is linked to a mixer (GoPlus)"
+  },
+  "sw_flag_fake_token": {
+    "message": "$1 is linked to fake tokens (GoPlus)"
+  },
+  "sw_ov_title_block": {
+    "message": "This page looks dangerous"
+  },
+  "sw_ov_title_susp": {
+    "message": "This page looks suspicious"
+  },
+  "sw_ov_minimize": {
+    "message": "Minimize"
+  },
+  "sw_ov_dismiss": {
+    "message": "Dismiss"
+  },
+  "sw_ov_pill": {
+    "message": "Signward: page warning"
+  },
+  "sw_ov_deep_btn": {
+    "message": "Deep analysis (AI)"
+  },
+  "sw_ov_analyzing": {
+    "message": "Analyzing..."
+  },
+  "sw_deep_privacy": {
+    "message": "This sends this page's content and the paths of its own scripts to Signward's server for an AI check. The server may also fetch those scripts from the site itself to inspect them."
+  },
+  "sw_deep_err": {
+    "message": "Could not reach the analysis service"
+  },
+  "sw_deep_err_busy": {
+    "message": "A scan is already running, please wait."
+  },
+  "sw_deep_err_timeout": {
+    "message": "The analysis timed out, try again."
+  },
+  "sw_deep_err_unavailable": {
+    "message": "The analysis service is temporarily unavailable, try again shortly."
+  },
+  "sw_deep_err_cooldown": {
+    "message": "Please wait $1 seconds before scanning again."
+  },
+  "sw_deep_block": {
+    "message": "AI check: this page looks dangerous"
+  },
+  "sw_deep_susp": {
+    "message": "AI check: this page looks suspicious"
+  },
+  "sw_deep_ok": {
+    "message": "AI check: no clear signs of phishing"
+  },
+  "sw_deep_with_score": {
+    "message": "$1 (score $2/100)"
+  },
+  "sw_sig_clickfix": {
+    "message": "The page tells you to paste a command into a Run box or terminal, often after a fake human check."
+  },
+  "sw_sig_seed": {
+    "message": "The page asks for a seed phrase, recovery phrase or private key. Real sites never need it."
+  },
+  "sw_seedguard_title_phrase": {
+    "message": "Never type your recovery phrase into a web page"
+  },
+  "sw_seedguard_title_key": {
+    "message": "Never type your private key into a web page"
+  },
+  "sw_seedguard_body": {
+    "message": "No legitimate site or wallet asks you to type your recovery phrase or private key into a web page. Anyone who has it can drain your wallet. If you did not mean to enter it here, stop and clear the field."
+  },
+  "sw_seedguard_dismiss": {
+    "message": "Dismiss"
+  },
+  "sw_sig_bad_referrer": {
+    "message": "You arrived here from a flagged site."
+  },
+  "sw_sig_claim_lure": {
+    "message": "Airdrop, claim or mint wording is used to pull you into acting."
+  },
+  "sw_sig_connect": {
+    "message": "The page offers to connect your wallet."
+  },
+  "sw_sig_claim_connect": {
+    "message": "A claim or mint offer is paired with a wallet connect button."
+  },
+  "sw_sig_urgency": {
+    "message": "The page uses countdown or time pressure wording."
+  },
+  "sw_sig_brand": {
+    "message": "This page claims to be $1, but its domain is not the official one."
+  },
+  "sw_sig_newdomain": {
+    "message": "This domain was registered $1 days ago."
+  },
+  "sw_sig_homograph": {
+    "message": "This web address uses look-alike characters to imitate $1."
+  },
+  "sw_pop_settings": {
+    "message": "Settings"
+  },
+  "sw_pop_toggle_aria": {
+    "message": "Turn Signward on or off"
+  },
+  "sw_pop_on": {
+    "message": "On"
+  },
+  "sw_pop_off": {
+    "message": "Off"
+  },
+  "sw_pop_note": {
+    "message": "Signward records approvals you make while it is installed. Scanning older approvals comes later."
+  },
+  "sw_pop_h_approvals": {
+    "message": "Your approvals"
+  },
+  "sw_pop_h_check": {
+    "message": "Check for risky approvals"
+  },
+  "sw_pop_scan_privacy": {
+    "message": "This sends your address to a public RPC to read your current approvals."
+  },
+  "sw_pop_scan_placeholder": {
+    "message": "Optional: another address (0x...)"
+  },
+  "sw_pop_scan_aria": {
+    "message": "Address to check"
+  },
+  "sw_pop_scan_btn": {
+    "message": "Check for risky approvals"
+  },
+  "sw_pop_scan_limits": {
+    "message": "Older approvals cannot be listed without an indexer. This re-checks approvals Signward recorded, plus assets named in the compromised-contracts feed. For a full review, open Revoke.cash."
+  },
+  "sw_pop_h_deep": {
+    "message": "Deep analysis"
+  },
+  "sw_pop_h_site": {
+    "message": "This site"
+  },
+  "sw_pop_h_defense": {
+    "message": "Approval defense"
+  },
+  "sw_dec_order_title": {
+    "message": "Marketplace order"
+  },
+  "sw_dec_order": {
+    "message": "You are signing an order that lets a marketplace (Seaport/Blur) move your NFTs or tokens. Only sign on a site you trust."
+  },
+  "sw_dec_7702_title": {
+    "message": "Account delegation"
+  },
+  "sw_dec_7702_known": {
+    "message": "Danger: this delegate is a known wallet drainer ($1). Do not sign."
+  },
+  "sw_dec_7702": {
+    "message": "You are authorizing code to act for your account (EIP-7702). A drainer can use this to take control. Approve only if you started this."
+  },
+  "sw_sim_changed": {
+    "message": "The simulated result changed since you reviewed it. Signward re-checked and stopped. Review again before signing."
+  },
+  "sw_sig_fake_wallet": {
+    "message": "A wallet on this page announced a suspicious or duplicate identity."
+  },
+  "sw_clip_title": {
+    "message": "Do not run commands you did not type"
+  },
+  "sw_clip_body": {
+    "message": "This page copied a system command to your clipboard. Pasting it into Terminal or the Run box can hand your computer to an attacker."
+  },
+  "sw_sig_referrer_social": {
+    "message": "You arrived here from a social or ad link."
+  },
+  "sw_sig_weaklist": {
+    "message": "This domain is on community phishing watchlists."
+  },
+  "sw_notif_compromised_title": {
+    "message": "Compromised approval"
+  },
+  "sw_notif_compromised_body": {
+    "message": "A contract you approved is now flagged as compromised. Open Signward to revoke it."
+  },
+  "sw_badge_compromised_tip": {
+    "message": "Signward: a contract you approved is compromised"
+  },
+  "sw_inc_title": {
+    "message": "Compromised approval"
+  },
+  "sw_inc_intro": {
+    "message": "A contract you approved through Signward is now flagged as compromised. Revoke the approval so it can no longer move your tokens or NFTs."
+  },
+  "sw_inc_none": {
+    "message": "No compromised approvals right now."
+  },
+  "sw_inc_contract": {
+    "message": "Compromised contract"
+  },
+  "sw_inc_wallet": {
+    "message": "Affected wallet"
+  },
+  "sw_inc_revoke": {
+    "message": "Revoke on Revoke.cash"
+  },
+  "sw_inc_details": {
+    "message": "Full incident report"
+  },
+  "sw_inc_what": {
+    "message": "What to do"
+  },
+  "sw_inc_steps": {
+    "message": "Click Revoke, connect this wallet, and cancel the approval to this contract. Until you do, it keeps the access you granted."
+  },
+  "sw_opt_strict": {
+    "message": "Strict mode"
+  },
+  "sw_opt_strict_desc": {
+    "message": "Confirm every signing request, on every site."
+  },
+  "sw_opt_h_sensitivity": {
+    "message": "Sensitivity"
+  },
+  "sw_opt_sens_normal_t": {
+    "message": "Normal"
+  },
+  "sw_opt_sens_normal_d": {
+    "message": "Full protection. Full-page block on high-risk pages (score 70+); corner warning on suspicious and blocked pages."
+  },
+  "sw_opt_sens_relaxed_t": {
+    "message": "Relaxed"
+  },
+  "sw_opt_sens_relaxed_d": {
+    "message": "Fewer interruptions. Full-page block only on very high-confidence pages (score 85+); corner warning on blocked pages only. Merely suspicious pages stay silent."
+  },
+  "sw_opt_sens_note": {
+    "message": "In both modes the signing gate, the phishing blocklist and the seed-phrase and clipboard guards stay fully on."
+  },
+  "sw_opt_trusted": {
+    "message": "Trusted sites"
+  },
+  "sw_opt_trusted_desc": {
+    "message": "Signward will not warn or block on these domains."
+  },
+  "sw_opt_trusted_add": {
+    "message": "Add"
+  },
+  "sw_opt_trusted_remove": {
+    "message": "Remove"
+  },
+  "sw_opt_trusted_empty": {
+    "message": "No trusted sites yet."
+  },
+  "sw_pop_deep_btn": {
+    "message": "Deep analysis of this tab"
+  },
+  "sw_pop_empty": {
+    "message": "No approvals recorded yet. When you approve something through Signward, it shows up here."
+  },
+  "sw_pop_remove": {
+    "message": "Remove from this list"
+  },
+  "sw_pop_asset": {
+    "message": "Asset"
+  },
+  "sw_pop_spender": {
+    "message": "Spender"
+  },
+  "sw_pop_unknown_site": {
+    "message": "unknown site"
+  },
+  "sw_kind_unlimited_approve": {
+    "message": "Unlimited token approval"
+  },
+  "sw_kind_approve": {
+    "message": "Token spending approval"
+  },
+  "sw_kind_setapprovalforall": {
+    "message": "Full collection access"
+  },
+  "sw_kind_permit": {
+    "message": "Signed spending permit"
+  },
+  "sw_kind_permit2": {
+    "message": "Signed Permit2 allowance"
+  },
+  "sw_pop_revoke": {
+    "message": "Revoke on Revoke.cash"
+  },
+  "sw_pop_alert_h": {
+    "message": "Action needed"
+  },
+  "sw_pop_alert_approved": {
+    "message": "You approved this contract. Wallet $1, chain $2."
+  },
+  "sw_pop_incident": {
+    "message": "Incident details"
+  },
+  "sw_ago_now": {
+    "message": "just now"
+  },
+  "sw_ago_min": {
+    "message": "$1 min ago"
+  },
+  "sw_ago_hour": {
+    "message": "$1 h ago"
+  },
+  "sw_ago_day": {
+    "message": "$1 d ago"
+  },
+  "sw_ago_month": {
+    "message": "$1 mo ago"
+  },
+  "sw_scan_active": {
+    "message": "still active"
+  },
+  "sw_scan_none": {
+    "message": "not active"
+  },
+  "sw_scan_error": {
+    "message": "could not check"
+  },
+  "sw_scan_na": {
+    "message": "not applicable"
+  },
+  "sw_scan_line": {
+    "message": "$1: $2"
+  },
+  "sw_scan_spender": {
+    "message": "Spender $1"
+  },
+  "sw_scan_meta": {
+    "message": "Asset $1 · chain $2 · wallet $3"
+  },
+  "sw_scan_found_one": {
+    "message": "$1 active approval found ($2 checked)."
+  },
+  "sw_scan_found_many": {
+    "message": "$1 active approvals found ($2 checked)."
+  },
+  "sw_scan_none_found": {
+    "message": "No active approvals found ($1 checked)."
+  },
+  "sw_scan_truncated": {
+    "message": "Only the first checks were run (limit reached)."
+  },
+  "sw_scan_skipped": {
+    "message": "No public RPC set for chain $1; skipped."
+  },
+  "sw_scan_bad_addr": {
+    "message": "That does not look like an address. Use 0x followed by 40 hex characters."
+  },
+  "sw_scan_checking": {
+    "message": "Checking..."
+  },
+  "sw_scan_failed": {
+    "message": "The check failed. Try again later."
+  },
+  "sw_scan_nothing": {
+    "message": "Nothing to check: no recorded approvals for this address, and the feed names no affected assets."
+  },
+  "sw_scan_rpc_fail": {
+    "message": "Could not reach the public RPC. Try again later."
+  },
+  "sw_scan_some_failed": {
+    "message": "$1 of $2 checks failed; the rest completed."
+  },
+  "sw_pop_deep_open": {
+    "message": "Open a regular web page first. Browser pages cannot be checked."
+  },
+  "sw_pop_deep_unread": {
+    "message": "Could not read this page. Reload it and try again."
+  },
+  "sw_opt_title": {
+    "message": "Signward settings"
+  },
+  "sw_opt_lead": {
+    "message": "Changes save automatically."
+  },
+  "sw_opt_off_note": {
+    "message": "Signward is turned off. Nothing is being checked until you turn it back on."
+  },
+  "sw_opt_h_protection": {
+    "message": "Protection"
+  },
+  "sw_opt_protection_t": {
+    "message": "Signward protection"
+  },
+  "sw_opt_protection_d": {
+    "message": "Master switch. When off, Signward does not check any request or page."
+  },
+  "sw_opt_h_warn": {
+    "message": "Warning display"
+  },
+  "sw_opt_warn_page_t": {
+    "message": "Full page warning"
+  },
+  "sw_opt_warn_page_d": {
+    "message": "Block known phishing sites with a warning page you can go back from."
+  },
+  "sw_opt_warn_popup_t": {
+    "message": "Badge only"
+  },
+  "sw_opt_warn_popup_d": {
+    "message": "Do not block the page; mark the tab with a badge instead."
+  },
+  "sw_opt_warn_off_t": {
+    "message": "Do not block"
+  },
+  "sw_opt_warn_off_d": {
+    "message": "Take no action on known phishing sites."
+  },
+  "sw_opt_h_screen": {
+    "message": "Screening"
+  },
+  "sw_opt_online_t": {
+    "message": "Online address screening"
+  },
+  "sw_opt_online_d": {
+    "message": "Also ask the Signward server for extra risk flags about addresses. Off means offline lists only."
+  },
+  "sw_opt_sim_t": {
+    "message": "Transaction simulation"
+  },
+  "sw_opt_soon": {
+    "message": "Coming soon"
+  },
+  "sw_opt_sim_d": {
+    "message": "Preview what a transaction will do before you approve it (coming soon)."
+  },
+  "sw_opt_h_lists": {
+    "message": "Lists"
+  },
+  "sw_opt_refresh_t": {
+    "message": "Refresh lists now"
+  },
+  "sw_opt_refresh_d": {
+    "message": "Download the latest phishing blocklist and address lists instead of waiting for the next automatic update."
+  },
+  "sw_opt_refreshing": {
+    "message": "Refreshing..."
+  },
+  "sw_opt_refreshed": {
+    "message": "Lists refreshed. Anything that could not be reached keeps its last copy."
+  },
+  "sw_opt_refresh_fail": {
+    "message": "Could not refresh. Try again later."
+  },
+  "sw_warn_tab_title": {
+    "message": "Signward: blocked site"
+  },
+  "sw_warn_title": {
+    "message": "This site is a known crypto-phishing page"
+  },
+  "sw_warn_unknown_host": {
+    "message": "(unknown address)"
+  },
+  "sw_warn_body": {
+    "message": "Signward blocked this page before it loaded. The address appears on a public list of sites built to steal wallets, seed phrases and token approvals."
+  },
+  "sw_warn_li1": {
+    "message": "Never enter a recovery phrase or private key on a website."
+  },
+  "sw_warn_li2": {
+    "message": "Do not connect a wallet or sign anything here."
+  },
+  "sw_warn_back": {
+    "message": "Go back"
+  },
+  "sw_warn_proceed": {
+    "message": "Proceed anyway"
+  },
+  "sw_warn_close_tab": {
+    "message": "You can close this tab."
+  },
+  "sw_warn_allow_failed": {
+    "message": "Could not allow this site. Try again."
+  },
+  "sw_report_btn": {
+    "message": "Report this site as phishing"
+  },
+  "sw_report_done": {
+    "message": "Reported, thank you."
+  },
+  "sw_report_rate": {
+    "message": "Already reported, or too many reports. Try again later."
+  },
+  "sw_report_error": {
+    "message": "Could not send the report. Try again."
+  },
+  "sw_sig_community_auto": {
+    "message": "The Signward community has flagged this site as suspicious."
+  },
+  "sw_pop_block": {
+    "message": "Block this site"
+  },
+  "sw_pop_unblock": {
+    "message": "Unblock"
+  },
+  "sw_pop_blocked": {
+    "message": "Blocked locally. You will see a warning page for this site."
+  },
+  "sw_pop_unblocked": {
+    "message": "Block removed."
+  },
+  "sw_pop_feedback": {
+    "message": "Feedback"
+  },
+  "sw_pop_follow_aria": {
+    "message": "Follow Signward on X"
+  },
+  "sw_pop_donate": {
+    "message": "Donate"
+  },
+  "sw_sig_host_short_brand": {
+    "message": "This address pairs the name $1 with other words on a site that is not theirs (official: $2)."
+  },
+  "sw_sig_host_brand": {
+    "message": "This address contains the name $1 but is not their official site ($2)."
+  },
+  "sw_sig_host_typo": {
+    "message": "This address is a near copy of the name $1 (official: $2)."
+  },
+  "sw_sig_host_bait": {
+    "message": "The address uses bait words: $1."
+  },
+  "sw_sig_host_free": {
+    "message": "A brand name on a free site builder ($1)."
+  },
+  "sw_sig_host_tld": {
+    "message": "Uses the .$1 ending, common on throwaway scam sites."
+  },
+  "sw_sig_ext_script": {
+    "message": "Loads code from an unrelated, throwaway host ($1)."
+  },
+  "sw_sig_kit_script": {
+    "message": "Contains a known wallet-drainer script ($1)."
+  },
+  "sw_sig_clone_kit": {
+    "message": "This page loads its files from a folder named after its own address, a sign of a cloned copy of a real site."
+  },
+  "sw_sig_anti_debug": {
+    "message": "This page loads a tool that blocks the browser's developer tools. Real apps do not hide from inspection; wallet-draining sites do."
+  },
+  "sw_sig_remote_payload": {
+    "message": "This page, next to a wallet button, pulls extra code from a permanent-storage gateway, a way wallet-draining kits hide their payload."
+  },
+  "sw_sig_ip_lookup": {
+    "message": "This page looks up your IP address, which wallet-draining sites use to profile visitors."
+  },
+  "sw_sig_page_x": {
+    "message": "Shows $1's official X account but is not on $2."
+  },
+  "sw_ov_score": {
+    "message": "Score $1/100"
+  },
+  "sw_pop_score_title": {
+    "message": "Page score $1/100: $2"
+  },
+  "sw_pop_score_title_plain": {
+    "message": "Page status: $1"
+  },
+  "sw_pop_score_ok": {
+    "message": "looks fine"
+  },
+  "sw_pop_score_susp": {
+    "message": "suspicious"
+  },
+  "sw_pop_score_block": {
+    "message": "dangerous"
+  },
+  "sw_warn_title_heur": {
+    "message": "Signward blocked this page: it looks like an impersonation"
+  },
+  "sw_warn_body_heur": {
+    "message": "Signward blocked this page before it could load further. The address imitates a known project or matches other signs of a wallet-stealing site."
+  },
+  "sw_warn_score": {
+    "message": "Risk score $1/100"
+  },
+  "sw_opt_conn_t": {
+    "message": "Check sites when connecting a wallet"
+  },
+  "sw_opt_conn_d": {
+    "message": "When a wallet connects, Signward checks the site against block lists, changes since your last visit and servers known to host drainers, and watches for unusual signing patterns. The server check is a DNS lookup through Cloudflare, at most once per site per day, and only while online screening is on."
+  },
+  "sw_conn_toast": {
+    "message": "First time connecting here. Signward is watching signatures."
+  },
+  "sw_conn_title": {
+    "message": "Check this site before connecting"
+  },
+  "sw_conn_cancel": {
+    "message": "Cancel"
+  },
+  "sw_conn_anyway": {
+    "message": "Connect anyway"
+  },
+  "sw_conn_blocked": {
+    "message": "This site is on a Signward block list."
+  },
+  "sw_conn_userblocked": {
+    "message": "You blocked this site yourself."
+  },
+  "sw_conn_reported": {
+    "message": "People have reported this site as dangerous."
+  },
+  "sw_conn_badip": {
+    "message": "This site is hosted on a server used by a known drainer."
+  },
+  "sw_conn_rebuilt": {
+    "message": "This site looks rebuilt since you last used it."
+  },
+  "sw_conn_antidebug": {
+    "message": "This page loads a tool that hides it from security inspection."
+  },
+  "sw_conn_obf": {
+    "message": "Its main script is heavily scrambled, which real apps rarely are."
+  },
+  "sw_conn_nogesture": {
+    "message": "The connection was requested without a click."
+  },
+  "sw_beh_after_connect": {
+    "message": "Signature requested right after connecting, without a click."
+  },
+  "sw_beh_burst": {
+    "message": "Several approval requests in a row."
+  },
+  "sw_sol_title_tx": {
+    "message": "Solana transaction"
+  },
+  "sw_sol_title_msg": {
+    "message": "Solana message signature"
+  },
+  "sw_sol_unreadable": {
+    "message": "Signward could not read this Solana request. Only continue if you trust this site."
+  },
+  "sw_sol_sweep": {
+    "message": "This moves SOL or tokens from $1 of your accounts to one address ($2)."
+  },
+  "sw_sol_takeover": {
+    "message": "This hands control of a token account to another address ($1). They could then take what is inside."
+  },
+  "sw_sol_authority": {
+    "message": "This changes who controls a token ($1)."
+  },
+  "sw_sol_approve": {
+    "message": "This lets $1 spend your tokens, up to $2 units."
+  },
+  "sw_sol_approve_all": {
+    "message": "This lets $1 spend any amount of your tokens."
+  },
+  "sw_sol_assign": {
+    "message": "This hands your wallet account over to another program ($1). It could then take your funds."
+  },
+  "sw_sol_lookup": {
+    "message": "Part of this request cannot be read because it uses address lookup tables."
+  },
+  "sw_sol_msg_risky": {
+    "message": "This message mentions: $1. Make sure you understand what you are authorizing."
+  },
+  "sw_sol_msg_tx": {
+    "message": "This message looks like a transaction in disguise. Do not sign it unless you expect that."
+  },
+  "sw_sol_k_message": {
+    "message": "Message"
+  },
+  "sw_warn_title_ip": {
+    "message": "This site's address now points to a known drainer server"
+  },
+  "sw_warn_body_ip": {
+    "message": "This domain currently resolves to a server known to host wallet-drainer clones. This is how a hijacked domain looks: the real project may have lost control of its DNS. Do not connect a wallet. Check the project's official X account for news."
+  },
+  "sw_find_label_recipient": {
+    "message": "Recipient"
+  },
+  "sw_find_label_agent": {
+    "message": "Agent key"
+  },
+  "sw_find_label_name": {
+    "message": "Name"
+  },
+  "sw_hl_title": {
+    "message": "Hyperliquid signature on an unofficial site"
+  },
+  "sw_hl_wrong_site": {
+    "message": "This is not an official Hyperliquid app. Funds on Hyperliquid move with signatures like this one, and nothing shows on-chain until they are gone."
+  },
+  "sw_hl_l1": {
+    "message": "This is a Hyperliquid trading action that Signward cannot read. It can place orders or move vault funds. Only continue if you started it on the official app."
+  },
+  "sw_hl_withdraw": {
+    "message": "This withdraws $1 USDC from Hyperliquid to $2."
+  },
+  "sw_hl_usdsend": {
+    "message": "This sends $1 USDC from your Hyperliquid account to $2."
+  },
+  "sw_hl_send": {
+    "message": "This sends $1 $2 from your Hyperliquid account to $3."
+  },
+  "sw_hl_agent": {
+    "message": "This gives another key ($1) permission to trade your Hyperliquid account. Only approve a key you created yourself."
+  },
+  "sw_hl_multisig": {
+    "message": "This hands control of your Hyperliquid account to other signers."
+  },
+  "sw_hl_builder": {
+    "message": "This lets $1 charge up to $2 in fees on your Hyperliquid trades."
+  },
+  "sw_hl_other": {
+    "message": "Hyperliquid action: $1. Only continue if you started it on the official app."
+  }
+}
