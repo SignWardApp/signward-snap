@@ -1,5 +1,5 @@
 import type { OnSignatureHandler, OnTransactionHandler } from "@metamask/snaps-sdk";
-import { Address, Box, Divider, Heading, Row, Text } from "@metamask/snaps-sdk/jsx";
+import { Address, Banner, Box, Divider, Heading, Row, Text } from "@metamask/snaps-sdk/jsx";
 import { SeverityLevel } from "@metamask/snaps-sdk";
 import { loadState, refreshIfStale, toFeed } from "./feed";
 import { evaluateSignature, evaluateTransaction, type Verdict } from "./verdict";
@@ -13,8 +13,14 @@ function panel(v: Verdict) {
   const f = v.finding;
   return (
     <Box>
-      <Heading>{v.critical ? "Signward warning" : "Signward check"}</Heading>
-      {v.critical ? v.reasons.map((r) => <Text>{clean(r)}</Text>) : null}
+      {v.critical ? (
+        // A red banner, so the warning reads as one even though MetaMask places snap insights below its own alerts.
+        <Banner title="Signward: high risk, do not sign unless you are sure" severity="danger">
+          {v.reasons.map((r) => <Text>{clean(r)}</Text>)}
+        </Banner>
+      ) : (
+        <Heading>Signward check</Heading>
+      )}
       {v.critical ? <Divider /> : null}
       {f ? <Text>{clean(f.title)}</Text> : null}
       {f ? f.lines.map((l) => <Text>{clean(l)}</Text>) : null}

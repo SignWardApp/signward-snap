@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A plain-English check on every transaction and signature, with a community drainer feed.",
   "proposedName": "Signward",
   "repository": {
@@ -8,7 +8,7 @@
     "directory": "snap"
   },
   "source": {
-    "shasum": "mQDT5hNE+kJNxU0zJeFuoLci5klH03Gr6FbLCmAIfzg=",
+    "shasum": "gRWM6wDo2wtv2v2MhRiXEBRzOKsE0tJO2eezl0MJGwI=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

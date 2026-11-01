@@ -1,6 +1,6 @@
 {
   "name": "@signwardapp/snap",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Signward for MetaMask: a plain-English check on every transaction and signature, with a community drainer feed.",
   "license": "MIT",
   "type": "module",
